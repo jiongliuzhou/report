@@ -21,6 +21,6 @@ import javax.servlet.Servlet;
 public class UreportConfig {
     @Bean
     public ServletRegistrationBean<Servlet> buildUreportServlet(){
-        return new ServletRegistrationBean<Servlet>(new UReportServlet(), "/ureport/*");
+        return new ServletRegistrationBean<>(new UReportServlet(), "/ureport/*");
     }
 }
